@@ -21,7 +21,7 @@ function App() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/analyze", {
+      const response = await fetch("https://campus-sustainability-ai-backend.vercel.app/api/analyze", {
         method: "POST",
 
         headers: {
