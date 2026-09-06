@@ -40,12 +40,11 @@ function App() {
       }
 
       setResult(data.response);
-
     } catch (error) {
       console.error("AI Error:", error);
 
       setError(
-        "Unable to analyze the sustainability problem. Please try again."
+        "Unable to analyze the sustainability problem. Please try again.",
       );
     } finally {
       setLoading(false);
@@ -73,8 +72,8 @@ function App() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">
-              Enter a real or hypothetical campus problem. The AI will
-              analyze the issue and suggest practical sustainability actions.
+              Enter a real or hypothetical campus problem. The AI will analyze
+              the issue and suggest practical sustainability actions.
             </p>
           </div>
 
@@ -93,14 +92,14 @@ function App() {
             )}
 
             {result && (
-  <ResultCard
-    result={result}
-    onNewAnalysis={() => {
-      setResult(null);
-      setInput("");
-    }}
-  />
-)}
+              <ResultCard
+                result={result}
+                onNewAnalysis={() => {
+                  setResult(null);
+                  setInput("");
+                }}
+              />
+            )}
           </div>
         </section>
 

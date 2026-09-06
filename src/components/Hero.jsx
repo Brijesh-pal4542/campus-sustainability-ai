@@ -7,7 +7,6 @@ export default function Hero() {
       className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-emerald-50"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
-
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-green-200 bg-white px-4 py-2 text-sm font-medium text-green-700 shadow-sm">
             <Sparkles size={16} />
@@ -51,9 +50,7 @@ export default function Hero() {
 
           <div className="absolute bottom-5 left-0 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl">
             <p className="text-xs text-slate-500">Expected Impact</p>
-            <p className="mt-1 font-bold text-slate-800">
-              Reduced waste
-            </p>
+            <p className="mt-1 font-bold text-slate-800">Reduced waste</p>
           </div>
         </div>
       </div>

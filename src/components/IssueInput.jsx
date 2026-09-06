@@ -1,12 +1,7 @@
 import { LoaderCircle, Send } from "lucide-react";
 import SampleIssues from "./SampleIssues";
 
-export default function IssueInput({
-  input,
-  setInput,
-  onAnalyze,
-  loading,
-}) {
+export default function IssueInput({ input, setInput, onAnalyze, loading }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -55,16 +50,14 @@ export default function IssueInput({
 
       <SampleIssues onSelect={setInput} />
 
-<div className="mt-4 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
-  <p className="text-xs leading-5 text-slate-500">
-    <span className="font-semibold text-slate-700">
-      Responsible AI:
-    </span>{" "}
-    This tool provides AI-assisted sustainability suggestions based on the
-    information provided. Recommendations should be reviewed and verified by
-    appropriate campus staff before implementation.
-  </p>
-</div>
+      <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+        <p className="text-xs leading-5 text-slate-500">
+          <span className="font-semibold text-slate-700">Responsible AI:</span>{" "}
+          This tool provides AI-assisted sustainability suggestions based on the
+          information provided. Recommendations should be reviewed and verified
+          by appropriate campus staff before implementation.
+        </p>
+      </div>
     </div>
   );
 }

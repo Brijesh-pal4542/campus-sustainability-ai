@@ -37,13 +37,9 @@ export default function Stats() {
             >
               <Icon className="mb-2 text-green-600" size={23} />
 
-              <p className="text-2xl font-bold text-slate-900">
-                {stat.value}
-              </p>
+              <p className="text-2xl font-bold text-slate-900">{stat.value}</p>
 
-              <p className="mt-1 text-xs text-slate-500">
-                {stat.label}
-              </p>
+              <p className="mt-1 text-xs text-slate-500">{stat.label}</p>
             </div>
           );
         })}
